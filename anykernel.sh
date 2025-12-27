@@ -14,6 +14,8 @@ device.name2=aliothin
 device.name3=apollo
 device.name4=apolloin
 device.name5=lmi
+device.name6=munch
+device.name7=munchin
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -38,6 +40,7 @@ case "$userflavor" in
     missi-user) os="miui"; os_string="MIUI ROM";;
     missi_phoneext4_cn-user) os="miui"; os_string="MIUI ROM";;
     missi_phone_cn-user) os="miui"; os_string="MIUI ROM";;
+    missi_phone_global-user) os="miui"; os_string="MIUI ROM";;
     qssi-user) os="miui"; os_string="MIUI ROM";;
     *) os="aosp"; os_string="AOSP ROM";;
 esac;
