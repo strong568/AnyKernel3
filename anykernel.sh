@@ -54,6 +54,10 @@ mv $home/kernels/Image $home/Image;
 ## AnyKernel boot install
 split_boot;
 
+# Chèn patch tại đây sau khi split
+patch_cmdline "androidboot.verifiedbootstate" "androidboot.verifiedbootstate=green"
+patch_cmdline "androidboot.vbmeta.device_state" "androidboot.vbmeta.device_state=locked"
+    
 flash_boot;
 # flash_dtbo;
 ## end boot install
